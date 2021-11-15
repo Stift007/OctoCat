@@ -1,7 +1,7 @@
 import os,random
 import discord
 from discord.errors import DiscordException
-from dhooks import Webhook
+from dhooks import Webhook,Embed
 import requests
 import abc
 import decimal
@@ -28,7 +28,7 @@ class OctoCat(commands.AutoShardedBot):
     def __init__(self, *args, **kwargs):
         super().__init__(*args,**kwargs)
 
-        # self.ipc = ipc.Server(self,secret_key="d.")
+        self.ipc = ipc.Server(self,secret_key="samplw key")
 
     async def on_ready(self):
         await set_stocks.start()
@@ -38,7 +38,7 @@ class OctoCat(commands.AutoShardedBot):
     async def on_ipc_ready(self):
         Hook = Webhook("https://discord.com/api/webhooks/859019870619566081/FChbx0-7rmXgYH4VNbXKf30mDF91cxOqTVqmLdyPKn03Ip3qumAr-73jTToBHxxfNqoI")
         print("IPC is active")
-        em = discord.Embed(desciption="IPC is active")
+        em = Embed(desciption="IPC is active")
         Hook.send(embed=em)
 
     async def on_ipc_error(self,endpoint,error):

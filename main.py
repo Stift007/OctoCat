@@ -1141,7 +1141,5 @@ load_dotenv()
 
 TOKEN=getenv("TOKEN")
 
-# bot.ipc.start()
-# ODIwMzA4ODY4NzA1ODEyNDkx.YEzSKg.E40fvmI_bKbjOPRMwBKYVLCSRUE
-
-bot.run("ODIwMzA4ODY4NzA1ODEyNDkx.YEzSKg.uMTT5YCdT-rldeghSeK64NHFJpY")
+bot.ipc.start()
+bot.run(TOKEN)

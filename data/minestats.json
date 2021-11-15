@@ -1,0 +1,11 @@
+{
+	"minehut":0,
+	"hypixel":{
+		"stats":0,
+		"rateLimits":0,
+		"bedwars":0,
+		"skyblock":0,
+		"requestsPosted":0
+	},
+	"totalRequestsPosted":0
+}

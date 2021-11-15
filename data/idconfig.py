@@ -1,0 +1,5 @@
+allowedIDsForAds = [751722629387255870,685180177419993102,820291925869068288]
+NoAdsChannels = [811158853210210364]
+
+if __name__ == "__main__":
+    allowedIDsForAds[0]

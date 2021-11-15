@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS starboard (
+    RootMessageID integer PRIMARY KEY,
+    StarMessageID INTEGER,
+    Stars INTEGER DEFAULT 1
+)
+
+DROP TABLE IF EXISTS posts
+CREATE TABLE posts (
+    ID integer PRIMARY KEY AUTO_INCREMENT
+)
